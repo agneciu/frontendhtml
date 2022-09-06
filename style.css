@@ -1,7 +1,48 @@
-h1 {
-    display:block;
+html {
+    font-family: sans-serif;
 }
-p {
-    background-color: red;
-    color: white;
+
+body {
+    background-color: rgb(183, 182, 182);
+}
+
+html, body, main {
+    height: 100%;
+}
+
+main {
+    max-width: 960px;
+    margin: 60px auto 0px auto;
+    padding: 100px; 
+}
+
+main h3, p {
+    margin: 7px 0px;
+}
+
+.card {
+    background-color: white;
+    padding: 50px 30px;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.2);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-img img {
+    height: 60px;
+    width:  60px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stats {
+    display: flex;
+    gap: 10px;
 }
