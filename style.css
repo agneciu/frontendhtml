@@ -1,26 +1,25 @@
 body {
-    margin: 0px;
-    background-image: url(https://img.freepik.com/premium-photo/texture-old-light-white-paper-background-structure-dense-cardboard_113767-239.jpg?w=2000);
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
 }
 
-main, header {
-    display: flex;
-    background-color: white;
+.wrapper {
+    width: 960px;
     margin: 0 auto;
-    padding: 20px 20px;
-    width: 900px;
 }
 
-header {
-    background-color: rgb(182, 231, 108);
+header img {
+    width: 5%;
+}
+
+header .wrapper {
+    display:flex;
     justify-content: space-between;
     align-items: center;  
 }
 
-header img {
-    width: 11%;
+header {
+    background-color: rgb(242, 215, 219);
 }
 
 header nav ul {
@@ -36,33 +35,54 @@ header nav ul li {
 
 a {
     text-decoration: none;
-    color: black;
-}
-
-article {
-    padding: 10px;
-}
-
-p {
-    text-align: justify;
-}
-
-article img {
-    float:left;
-    margin: 0px 20px 20px 0px;
-}
-
-button {
-    float: right;
-    background-color: rgb(182, 231, 108);
     color: white;
-    border: none;
-    padding: 10px;
 }
 
-footer {
-    margin: 0 auto;
-    text-align: center;
-    width: 25%;
-    color: darkgreen;
+main {
+    flex-direction: column;
+    background-color: white;
 }
+
+main article img {
+    width: 20%;
+    float: right;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+main div article ul {
+    border: 1px solid rgb(86, 71, 71);
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1; 
+}
+
+main div article ul li {
+    list-style:none;
+    border-bottom: 1px solid rgb(86, 71, 71);
+    padding: 5px;
+}
+
+.circles {
+    display: flex;
+    gap: 35px;
+}
+
+article div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid rgb(86, 71, 71);
+}
+
+.lightblue {
+    background-color: rgb(187, 216, 216);
+    border-top:2px solid rgb(86, 71, 71);
+    border-bottom:2px solid rgb(86, 71, 71);
+}
+
