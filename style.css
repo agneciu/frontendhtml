@@ -1,110 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 body {
-    font-family: 'Quicksand', sans-serif;
     margin: 0;
 }
 
 .wrapper {
-    width: 960px;
+    width: 900px;
     margin: 0 auto;
-    padding: 0px 0px 40px 0px;
-}
-
-header img {
-    width: 5%;
- }
-
-header .wrapper {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;  
-    padding: 10px;
 }
 
 header {
-    background-color: rgb(242, 215, 219);
+    background-color: brown;
+    color: white;
+    padding: 5px 0px;
 }
 
-h2 {
-    margin: 0;
+header img {
+    height: 45px;
 }
 
-.h2 {
-    background-color: aliceblue;
-    padding: 20px 0px 20px 0px;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav ul {
-    padding: 0;
-    margin: 0;
     display: flex;
-}
-
-header nav ul li {
+    gap: 20px;
     list-style: none;
-    margin: 0px 10px;
 }
 
-a {
-    text-decoration: none;
+header nav ul li:last-child a {
+    padding: 15px 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url(https://alynas.lt/wp-content/uploads/2020/03/Alynas-barai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    height: 30vh;
+}
+
+.hero .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 200px;
+    height: 30vh;
+}
+
+h1 {
+    background-color: rgba(167, 47, 47, 0.7);
+    padding: 7px;
+}
+
+.products {
     color: white;
-}
-
-main {
-    flex-direction: column;
-    background-color: white;
-}
-
-main article img {
-    width: 20%;
-    float: right;
-}
-
-.list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
+    flex-wrap: wrap;
 }
 
-main div article ul {
-    border: 1px solid rgb(86, 71, 71);
-    border-radius: 20px;
-    padding: 20px;
-    flex: 1; 
+.product-card {
+    width: calc(25% - 3px);
+    background-color:rgba(167, 47, 47, 0.7);
+    margin-bottom: 3px;
 }
 
-main div article ul li {
-    list-style:none;
-    border-bottom: 1px solid rgb(86, 71, 71);
-    padding: 5px;
+.product-card:not(:nth-child(4n)) {
+    margin-right: 4px;
 }
 
-.circles {
-    display: flex;
-    gap: 35px;
-    padding: 10px;
-}
-
-article div img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 1px solid rgb(86, 71, 71);
-}
-
-.lightblue {
-    border-top:2px solid rgb(86, 71, 71);
-    border-bottom:2px solid rgb(86, 71, 71);
-    background-color: aliceblue;
-}
-
-footer p {
-    margin: 0 auto;
-}
-
-footer {
-    background-color: rgb(242, 215, 219);
-    display: flex;
-    border-top:2px solid rgb(86, 71, 71);
-    padding: 20px 0px 20px 0px;
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: scale-down;
 }
