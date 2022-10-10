@@ -91,7 +91,9 @@ padding: 10px 80px 10px 80px;
 color: white;
 background-color: rgb(46, 42, 42);
 border: none;
-padding: 10px 10px 10px 10px;
+padding: 15px 50px 15px 50px;
+margin:0 auto;
+display: grid;
 
 }
 
@@ -122,10 +124,14 @@ text-decoration: none;
       padding-right: 200px;
       padding-left: 200px;
   }
-
-  .header__images {
-      justify-content: start;
+  
+  .header__images{
+    margin:0px;
   }
+
+ .header--image {
+  justify-content: start;
+ }
 
   .header__list {
       display: grid;
