@@ -1,23 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(110, 148, 123);
+  padding-bottom:100px;
 }
 
-.black-square {
-  background-color: black;
-  height: 100px;
-  width: 100px;
+.article__timeline {
+  margin:0 auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+}
+
+.article__timeline--card {
+  margin-bottom: 60px;
+}
+
+.timeline--card--right {
+text-align: right;
+padding-right:70px;
+}
+
+.timeline--card--left {
+  text-align: left;
+  padding-left:70px;
+}
+
+.timeline__heading {
+  margin: 5px 0px 0px 0px;
+  font-size: 18px;
+}
+
+.timeline__paragraph {
+  margin-top: 5px 0px 0px 0px;
+  color: rgb(208, 208, 208);
+  font-size: 12px;
+}
+
+.article__timeline--middle {
+  position: relative;
+  background-color: rgb(208, 208, 208);
+}
+
+.middle--image {
   position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
-}
-
-p {
-  color: white;
-  margin:0;
-  position: absolute;
-  top:50%;
+  border: 5px solid rgb(208, 208, 208);
+  width: 100px;
+  height: 100px;
+  background-image : url(https://cdn.britannica.com/50/180050-138-521974A7/tree-limits-height-width-growth-ring-discussion.jpg?w=800&h=450&c=crop);
+  top: 0;
   left:50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
