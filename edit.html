@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Edit task</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__flex">
+                <h1 class="header__title">Best <span class="header__title--span">ToDo</span> App</h1>
+                <nav class="header__navigation">
+                    <ul class="header__list">
+                        <li class="header__list--item"> <a class="header__link" href="#"></a> <img class="header__logo"
+                                src="images/facebook.svg" alt="fb"> </li>
+                        <li class="header__list--item"> <a class="header__link" href="#"></a><img class="header__logo"
+                                src="images/twitter.svg" alt="twitter"> </li>
+                        <li class="header__list--item"> <a class="header__link" href="#"></a><img class="header__logo"
+                                src="images/linkedin.svg" alt="linkedin"></li>
+                    </ul>
+                    </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <form action="edit.html" method="get" class="form">
+            <h2 class="form__heading">Edit Task</h2>
+            <div class="form__neededinfo">
+            <div class="form__taskid">
+                <label>Task ID</label>
+                <input type="text" value="123456789" class="form__taskid--input"/>
+            </div>
+            <div class="form__name">
+                <label>Name</label>
+                <input type="text" value="Take out trashes" class="form__name--input"/>
+            </div>
+            <div class="form__completed">
+                <label>Completed</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+            </div>
+
+            <button class="form__editbutton" type="submit">Edit</button>
+
+            <p class="form__error">There Was An Error</p>
+
+        </div>
+
+        </form>
+
+        <button class="form__backbutton" type="submit">Back To Tasks</button>
+
+    </main>
+    
+</body>
+</html>

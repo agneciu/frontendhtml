@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,66 +9,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Homework</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>ToDo list</title>
 </head>
+
 <body>
-    <article class="article">
-        <div class="article__timeline">
-            <div class="article__timeline--card timeline--card--right">
-                <h2 class="timeline__heading">2009-2011</h2>
-                <h2 class="timeline__heading">Our Humble Beginings</h2>
-                <p class="timeline__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, impedit recusandae eveniet qui reprehenderit unde accusamus repellat sapiente totam cupiditate in hic accusantium quam. Ex velit magni sequi repellat aliquam.</p>
-            </div>
-            <div class="article__timeline--middle">
-                <div class="middle--image"></div>
-            </div>
-            <div class="empty"></div>
-        </div>
 
-        <div class="article__timeline">
-            <div class="empty"></div>
-            <div class="article__timeline--middle">
-                <div class="middle--image"></div>
-            </div>
-            <div class="article__timeline--card timeline--card--left">
-                <h2 class="timeline__heading">2009-2011</h2>
-                <h2 class="timeline__heading">Our Humble Beginings</h2>
-                <p class="timeline__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, impedit recusandae eveniet qui reprehenderit unde accusamus repellat sapiente totam cupiditate in hic accusantium quam. Ex velit magni sequi repellat aliquam.</p>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__flex">
+                <h1 class="header__title">Best <span class="header__title--span">ToDo</span> App</h1>
+                <nav class="header__navigation">
+                    <ul class="header__list">
+                        <li class="header__list--item"> <a class="header__link" href="#"></a> <img class="header__logo"
+                                src="images/facebook.svg" alt="fb"> </li>
+                        <li class="header__list--item"> <a class="header__link" href="#"></a><img class="header__logo"
+                                src="images/twitter.svg" alt="twitter"> </li>
+                        <li class="header__list--item"> <a class="header__link" href="#"></a><img class="header__logo"
+                                src="images/linkedin.svg" alt="linkedin"></li>
+                    </ul>
+
+                </nav>
             </div>
         </div>
 
-        <div class="article__timeline">
-            <div class="article__timeline--card timeline--card--right">
-                <h2 class="timeline__heading">2009-2011</h2>
-                <h2 class="timeline__heading">Our Humble Beginings</h2>
-                <p class="timeline__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, impedit recusandae eveniet qui reprehenderit unde accusamus repellat sapiente totam cupiditate in hic accusantium quam. Ex velit magni sequi repellat aliquam.</p>
-            </div>
-            <div class="article__timeline--middle">
-                <div class="middle--image"></div>
-            </div>
-            <div class="empty"></div>
-        </div>
+    </header>
 
-        <div class="article__timeline">
-            <div class="empty"></div>
-            <div class="article__timeline--middle">
-                <div class="middle--image"></div>
-            </div>
-            <div class="article__timeline--card timeline--card--left">
-                <h2 class="timeline__heading">2009-2011</h2>
-                <h2 class="timeline__heading">Our Humble Beginings</h2>
-                <p class="timeline__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, impedit recusandae eveniet qui reprehenderit unde accusamus repellat sapiente totam cupiditate in hic accusantium quam. Ex velit magni sequi repellat aliquam.</p>
-            </div>
-        </div>
+    <main class="main">
 
-        <div class="article__timeline--card">
-            <div class="empty"></div>
-            <div class="article__timeline--middle">
-                <div class="middle--image"></div>
+        <form action="index.html" method="get" class="form">
+            <h2 class="form__heading">Your Tasks</h2>
+            <div class="form__search">
+                <input class="form__input" type="search" id="task" name="task" placeholder="e.g. wash dishes" required>
+                <button class="form__button" type="submit">Add</button>
             </div>
-            <div class="empty"></div>
-        </div>
-    </article>
-    
+        </form>
+
+        <section class="tasks">
+
+            <div class="task task__first">
+                <h3 class="task__header">Take Out Trashes</h3>
+                <div class="task__icons">
+                    <a href="#"><img class="task__logo1" src="images/pen-to-square-solid.svg" alt="pen"></a>
+                    <a href="#"><img class="task__logo1" src="images/trash-solid.svg" alt="trash"></a>
+                </div>
+            </div>
+
+            <div class="task task__second">
+                <div class="task__done">
+                    <a href="#"><img class="task__logo3" src="images/circle-check-regular.svg" alt="done"></a>
+                    <h3 class="task__header task__header--done">Take Out Trashes</h3>
+                </div>
+                <div class="task__icons">
+                    <a href="#"><img class="task__logo1" src="images/pen-to-square-solid.svg" alt="pen"></a>
+                    <a href="#"><img class="task__logo1" src="images/trash-solid.svg" alt="trash"></a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
 </body>
+
 </html>

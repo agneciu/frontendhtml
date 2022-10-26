@@ -1,0 +1,168 @@
+@import "editstyle.scss";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+$primary-color:rgb(110, 86, 231);
+$primary-shadow: 0px 4px 4px rgb(0, 0, 0, 0.3);
+$all-border-radius: 5px;
+
+.header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    grid-auto-rows: 80px;
+    box-shadow: $primary-shadow;
+    grid-template-areas: 
+    ". wrapper .";
+    position: relative;
+    
+
+
+    &__wrapper {
+        grid-area: wrapper;
+        align-self: center;   
+    }
+
+    &__title {
+        color: black;
+    }
+
+    &__title--span {
+        color: $primary-color;
+    }
+
+    &__logo {
+        width: 15px;
+        height: 15px;
+        
+    }
+
+    &__list--item {
+        list-style: none;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    &__list {
+        display: flex;
+        gap:10px;
+    }
+
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;   
+}
+
+.form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    box-shadow: $primary-shadow;
+    padding: 30px 20px 40px 20px;
+    border-radius: $all-border-radius;
+
+    &__heading {
+        padding-bottom: 15px;
+    }
+
+    &__search {
+        display: flex;
+
+    }
+
+    &__input {
+        width: 300px;
+        border: 1px solid rgb(239, 229, 229);
+        background-color: rgb(209, 216, 230, 0.3);
+        border-radius: 5px 0px 0px 5px;
+       
+    }
+
+    &__button {
+        border: none;
+        color: white;
+        background-color: $primary-color;
+        padding:5px 40px 5px 40px;
+        border-radius: 0px 5px 5px 0px;
+           }
+    
+}
+
+.task {
+    background-color: white;
+    display: flex;
+    
+    &__header--done {
+        text-decoration: line-through;
+    }
+
+    &__first {
+        box-shadow: $primary-shadow;
+        margin-top: 50px;
+        width: 500px;
+        padding: 20px 40px 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: $all-border-radius;
+    }
+
+    &__second {
+        box-shadow: $primary-shadow;
+        margin-top: 20px;
+        width: 500px;
+        padding: 20px 40px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: $all-border-radius;
+    }
+
+    &__icons {
+        display: flex;
+        gap:10px;
+    }
+
+    &__logo1 {
+        width: 15px;
+        height: 15px;
+    }
+
+    &__logo2 {
+        width: 15px;
+        height: 15px;
+    }
+
+    &__logo3 {
+        width: 15px;
+        height: 15px;
+    }
+
+    &__done {
+        display: flex;
+        align-items: flex-end;
+        gap:10px;
+    }
+}
+

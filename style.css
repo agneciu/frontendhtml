@@ -1,63 +1,191 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.form__neededinfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.form__taskid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.form__taskid--input {
+  border: none;
+  color: black;
+}
+.form__name {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.form__name--input {
+  color: black;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid rgb(239, 229, 229);
+  background-color: rgba(209, 216, 230, 0.3);
+  border-radius: 5px;
+}
+.form__completed {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.form__editbutton {
+  border: none;
+  color: white;
+  background-color: rgb(110, 86, 231);
+  padding: 5px;
+  border-radius: 5px;
+}
+.form__error {
+  color: rgb(144, 84, 84);
+  font-size: 10px;
+  align-self: center;
+}
+.form__backbutton {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 60px 10px 60px;
+}
+
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(110, 148, 123);
-  padding-bottom:100px;
-  padding-top: 20px;
+  background-color: rgb(237, 237, 237);
 }
 
-.article__timeline {
-  margin:0 auto;
-  max-width: 800px;
+.header {
+  background-color: white;
   display: grid;
-  grid-template-columns: 1fr 3px 1fr;
-}
-
-.article__timeline--card {
-  margin-bottom: 60px;
-}
-
-.article__timeline--card:last-child {
-  margin-bottom: 30px;
-}
-
-.timeline--card--right {
-text-align: right;
-padding-right:70px;
-}
-
-.timeline--card--left {
-  text-align: left;
-  padding-left:70px;
-}
-
-.timeline__heading {
-  margin: 5px 0px 0px 0px;
-  font-size: 18px;
-}
-
-.timeline__paragraph {
-  margin-top: 5px 0px 0px 0px;
-  color: rgb(208, 208, 208);
-  font-size: 12px;
-}
-
-.article__timeline--middle {
+  grid-template-columns: 40px auto 40px;
+  grid-auto-rows: 80px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  grid-template-areas: ". wrapper .";
   position: relative;
-  background-color: rgb(208, 208, 208);
+}
+.header__wrapper {
+  grid-area: wrapper;
+  align-self: center;
+}
+.header__title {
+  color: black;
+}
+.header__title--span {
+  color: rgb(110, 86, 231);
+}
+.header__logo {
+  width: 15px;
+  height: 15px;
+}
+.header__list--item {
+  list-style: none;
+}
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  gap: 10px;
 }
 
-.middle--image {
-  position: absolute;
-  border-radius: 50%;
-  border: 5px solid rgb(208, 208, 208);
-  width: 100px;
-  height: 100px;
-  background-image : url(https://cdn.britannica.com/50/180050-138-521974A7/tree-limits-height-width-growth-ring-discussion.jpg?w=800&h=450&c=crop);
-  top: 0;
-  left:50%;
-  transform: translateX(-50%);
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
 }
+
+.form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  padding: 30px 20px 40px 20px;
+  border-radius: 5px;
+}
+.form__heading {
+  padding-bottom: 15px;
+}
+.form__search {
+  display: flex;
+}
+.form__input {
+  width: 300px;
+  border: 1px solid rgb(239, 229, 229);
+  background-color: rgba(209, 216, 230, 0.3);
+  border-radius: 5px 0px 0px 5px;
+}
+.form__button {
+  border: none;
+  color: white;
+  background-color: rgb(110, 86, 231);
+  padding: 5px 40px 5px 40px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.task {
+  background-color: white;
+  display: flex;
+}
+.task__header--done {
+  text-decoration: line-through;
+}
+.task__first {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+  width: 500px;
+  padding: 20px 40px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.task__second {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  width: 500px;
+  padding: 20px 40px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.task__icons {
+  display: flex;
+  gap: 10px;
+}
+.task__logo1 {
+  width: 15px;
+  height: 15px;
+}
+.task__logo2 {
+  width: 15px;
+  height: 15px;
+}
+.task__logo3 {
+  width: 15px;
+  height: 15px;
+}
+.task__done {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
